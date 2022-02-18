@@ -1,2 +1,3 @@
 # piipecek.github.io
-Lorem tomio
+
+Zatím tu je jen apliakce Tomiem Ipsum.
