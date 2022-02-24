@@ -1,3 +1,11 @@
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
 console.log("here")
 
 let words_select = document.getElementById("words")
@@ -8,5 +16,6 @@ btn.addEventListener("click", generovat)
 
 function generovat() {
     let words_count = parseInt(words_select.value)
-    result_div.innerHTML = "vybral jsi " + String(words_count) + " slov."
+    let result = httpGet("https://www.piipovostranky.cz/visuals/tomiem_ipsum/" + String(words_count))
+    result_div.innerHTML = result
 }
