@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+img
+{
+    max-width: 100%;
+}
+
 @font-face
 {
     font-family: "SPD";
@@ -12,36 +17,19 @@
 body
 {
     margin:0;
-}
-
-h1
-{ 
-padding: 15vh 0 15vh 0;
-margin-top:0px;
-margin-bottom: 0px;
-font-size: 3em;
+    font-family: "SPD";
 }
 
 .container
 {
-    font-family: "SPD";
     max-width: 750px;
     margin: 0 auto;
-    
 }
 
-.uvod
+.green-background
 {
     background-color: #3F4B19;
-    min-height: 70vh;
-
-    padding: 0 20px 0 20px;
-    color:burlywood;
-}
-
-img
-{
-    max-width: 100%;
+    color: burlywood;
 }
 
 header
@@ -50,14 +38,63 @@ header
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
+.uvod
+{
+    
+    padding: 0 20px 0 20px;
+}
+
+h1
+{ 
+    padding: 10vh 0 10vh 0;
+    margin: 0 auto;
+    font-size: 3em;
+}
+
+
+
 main
 {
     padding: 2em;
     min-height: 50vh;
-
 }
 
-.width100
+#btn
 {
-    width:100%;
+    font-family: "SPD";
+}
+
+
+footer
+{ 
+    text-align: center;
+    background-color: black;
+    color:black;
+    padding: 20px;
+    margin-left: auto;
+}
+
+
+@media (min-width: 1000px)
+{
+    header
+    {
+        height: 100vh;
+        max-width: 25%;
+    }
+
+    .big-flex
+    {
+        display: flex;
+    }
+
+    main
+    {
+        margin-left: 0;
+    }
+    .container
+    {
+        margin-left: inherit;
+    }
 }
