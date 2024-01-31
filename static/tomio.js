@@ -16,6 +16,6 @@ btn.addEventListener("click", generovat)
 
 function generovat() {
     let words_count = parseInt(words_select.value)
-    let result = httpGet("//www.piipovostranky.cz/visuals/tomiem_ipsum/" + String(words_count))
+    let result = httpGet("//www.piipovostranky.cz/tomiem_ipsum/" + String(words_count))
     result_div.innerHTML = result
 }
